@@ -1,0 +1,816 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    margin:0px;
+    padding: 0px;
+  }
+
+.background-image {
+    height:800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+ 
+}
+.background-image img {
+    width: 100%;
+    height: 100%;
+}
+.topbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(7, 124, 153);
+    z-index: 1;
+}
+.topbar .container {
+    width:70%;
+    margin:0 auto;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;    
+}
+
+.menu ul {
+padding: 0;
+
+}
+.menu ul li {
+    display: inline-block;
+    margin-left: 30px;
+    text-align: center;
+    
+}
+.menu ul li a{
+    color: #090011;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 1;
+    font-weight: 800;
+}
+.menu-container {
+    margin:0 auto;
+}
+
+.logo-container .logo a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    color: #f4f4f8;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+.logo-container .logo img {
+    width:20%;
+}
+.search-tabs {
+    position: relative;
+    width:90%;
+    background: #ffff;
+    margin:0 auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.search-tabs .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height:100px;
+    align-items: center;
+}
+.search-tabs .container div {
+    display:table;
+    margin:0 auto;
+}
+.search-tabs .container div i {
+   font-size: 30px;
+   color: #201c29;
+   margin-right: 10px;
+}
+.search-tabs .container div span {
+   display:table-cell;
+   vertical-align:middle;
+}
+.search-tabs .container div img {
+    margin-right:10px;
+}
+.search-panel {
+    width:100%;
+    background: #350a4e;
+    position: relative;
+    height:200px;    
+}
+.search-panel .container{
+    display: table;
+    margin: 0 auto;
+    height:100%;
+    width:80%;
+}
+.search-panel .form {
+    height:100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 0.7fr 0.7fr 1fr ;
+    align-items: center;
+}
+.search-panel .form .search-item .center{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left:10px;
+}
+.search-panel .form .search-item .title-input {
+    width:90px;
+    margin-left:10px;
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+}
+.search-panel .form .search-item .title-select {
+    margin-left:10px;
+    font-size: 20px;
+    color: #fff;
+}
+.search-panel .form .search-item input,select,button{
+    padding:10px;
+}
+.search-panel .form .search-item .destination,.check_in,.check_out,.adults,.children{
+    width:100%;
+}
+.search-button {
+    width:100%;
+    margin-top:18px;
+	font-size: 13px;
+	font-weight: 500;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 53px;
+	background: #090011;
+    border-radius: 10%;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.tours {
+    width:100%;
+    height:auto;
+}
+.tours .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    width:90%;
+    height:100%;
+    align-items: center;
+    margin:0 auto;
+    padding:100px;
+}
+
+@media screen and (max-width: 1000px) {
+    
+    .tours .container {
+        grid-template-columns: repeat(1, 1fr);
+        width:100%;
+    }
+}
+@media screen and (max-width: 1400px) {
+
+    .tours .container {
+        width:100%;
+        padding:50px;
+        grid-gap: 20px;
+    }
+}
+
+.tours .container .item {
+    background: #0f171b; 
+    height:500px;
+    position: relative;
+    
+}
+.tours .container .item .period {
+    position: absolute;
+    top:10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #090011;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+}
+.tours .container .item .title {
+    position: absolute;
+    top:40%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 59px;
+    font-weight: 700;
+    color: #090011;
+    letter-spacing: -0.05em;
+}
+.tours .container .item button {
+    position: absolute;
+    bottom:40px;
+    width:140px;
+    height: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 13px;
+	font-weight: 500;
+	color: #fff;
+	text-transform: uppercase;
+	background: #090011;
+    border-radius: 15%;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.tours .container .item .image{
+    height:100%;
+}
+.tours .container .item .image img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.carousel {
+    width:80%;
+    margin:0 auto;
+    position: relative;
+    margin-bottom: 10%;
+}
+@media screen and (max-width: 1000px) {
+    .carousel {
+        margin-bottom: 20%;
+        width:90%;
+    }
+    .carousel_track li .description h1 {
+        font-size: 16px;
+    }
+    .carousel_track li .description p {
+        font-size: 14px;
+    }
+
+}
+.carousel .carousel_track-container {
+    width:100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel .carousel_track-container ul li {
+    display: inline-block;
+}
+.carousel_track {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width:300%;
+    height:100%;
+    margin:0px;
+    padding: 0px;
+    position: relative;
+}
+.carousel_track li .description {
+    position: absolute;
+    top:0px;
+    padding:40px;
+    width:30%;
+    color: white;  
+}
+.carousel_track li .description h1, .carousel_track li .description p{
+    background: rgb(7, 124, 153);
+}
+.carousel_track .carousel_slide{
+    width:100%;
+    height:100%;
+}
+.carousel_track .carousel_slide img {
+    width: 100%;
+}
+.carousel_button{
+	position: absolute;
+	top:45%;
+	border: 0;
+    cursor: pointer;
+}
+.carousel_button img{ 
+    width: 20px;
+}
+.button-left{
+	left: -40px;
+}
+.button-right {
+    right: -40px;
+}
+.offers {
+    width:90%;
+    height:auto;
+    margin: 0 auto;
+    bottom:50px;
+    position: relative;
+}
+.offers .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    width:90%;
+    margin: 0 auto;
+}
+
+.offers .container .item {
+    display:flex;
+    flex-direction: row;
+    overflow: hidden;
+    height:400px;
+}
+@media screen and (max-width: 1400px) {
+    .offers {
+        width:90%;
+    }
+    .offers .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.offers .container .item .image {
+    width:50%;
+
+}
+.offers .container .item .image .image-details{
+    position: relative;
+}
+.offers .container .item .image h3{
+    position:absolute;
+    bottom:40px;
+    left:0px;
+    width:0px;
+    visibility: hidden;
+    white-space: nowrap;
+}
+.offers .container .item .image:hover h3{
+    background: rgb(255, 255, 255);
+    width:100%;
+    transition: width 1s;
+    transition-timing-function: ease;
+    visibility: visible;
+}
+.offers .container .item .details{
+    width:50%;
+    margin-left: 5px;
+    position: relative;
+}
+.offers .container .item .details .price {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:0px; 
+}
+.offers .container .item .details .price h1{
+    color: #0f171b;
+    font-weight: 800;
+}
+.offers .container .item .details .price span {
+    margin-left: 10px;
+}
+.offers .container .item .details .offer {
+    background: rgb(7, 124, 153);
+    color: #fff;
+    position: absolute;
+    bottom:0px;
+    text-align: center;
+    opacity: 0.7;
+}
+.offers .container .item .details .offer p{
+    font-size: 17px;
+}
+.offers .container .item .image img {
+    width:100%;
+    height:400px;
+} 
+.customer-reviews {
+    width:80%;
+    height:auto;
+    margin:0 auto;
+    margin-bottom: 25%;
+    position: relative;
+}
+.customer-reviews .title {
+    margin-left: 0px;
+}
+.customer-reviews .container {
+    width:100%;
+    height:50%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+@media screen and (max-width: 1000px) {
+    .customer-reviews .container {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+@media screen and (max-width: 1400px) {
+    .customer-reviews .container {
+        gap: 20px;
+    }
+}
+.customer-reviews .container .review{
+    background: rgb(190, 210, 211);
+    color: #a1a1af;
+    border-radius: 20px;
+    height:200px;
+    position: relative;
+}
+.customer-reviews .container .review .review-panel{
+    height:100%;
+}
+.customer-reviews .container .review .poza {
+    height: 100%;
+    position: absolute;
+    top:0px;
+    display: flex;
+    align-items: center;
+    margin-left:30px;
+}
+.customer-reviews .container .review .poza img{
+    border-radius: 60px;
+    width:100px;  
+}
+.customer-reviews .container .review .poza h3 {
+    padding:10px;
+    color:#201c29;
+}
+.customer-reviews .container .review .arrow i{
+    font-size: 40px;
+    bottom:0px;
+    right:30px;
+    position: absolute;
+    color:#201c29;
+}
+.comment {
+    display:none;
+    background:#201c29;
+    box-shadow: 0 0 3rem #100e17;
+    color: #ffffff;
+    border-radius: 5px;
+    height:200px;
+    padding:10px;
+}
+.dots {
+    width:75px;
+    position:absolute;
+    bottom:-12px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display:none;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.tourists {
+    width:80%;
+    height:auto;
+    margin:0 auto;
+    margin-top:100px;
+}
+.tourists .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin:0 auto;
+}
+.tourists .container .form {
+    width:100%;
+}
+@media screen and (max-width: 1000px) {
+    .tourists .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.form-title {
+    text-align: center;
+}
+.tourists .container .form .action .form-group div{
+    display: flex;
+    align-items: center;
+    margin-top:30px;
+}
+.tourists .container .form .action .form-group div label{
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 800;
+}
+.tourists .container .form .action .form-group div input,textarea{
+    padding:10px;
+    border-radius: 10px;
+    border: #090011;
+    margin-left: 40px;
+    background: rgb(190, 210, 211);
+    width:250px;
+}
+.tourists .container .form .form-group{
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;   
+}
+.tourists .container .image {
+    display: flex;
+    justify-content: center;
+}
+.tourists .container .image img{
+    width:100%;
+    height:80%;
+}
+
+.send-message-button {
+    margin-top:18px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 33px;
+    background: #090011;
+    border-radius: 20%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.footer {
+    width:100%;
+    background: rgb(7, 124, 153);
+    height:400px;
+    margin-top: 10%;
+}
+.footer .container {
+    width:100%;
+    height:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer .container .footer-left .logo {
+    display: flex;
+    justify-content: center;
+}
+.footer .container .footer-left .logo img{
+    width:30%;
+}
+@media screen and (max-width: 1000px) {
+    .footer .container .footer-left .logo img{
+        width:50%;
+    }
+}
+.footer .container .center-panel{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.footer .container .center-panel h2{
+    text-align: center;
+}
+.footer .container .center-panel .phone,.email {
+    display: table;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.footer .container .center-panel .phone i,.email i{
+    font-size: 30px;
+    margin-right:10px;
+    color: #090011;
+}
+.footer-left,.footer-center,.footer-right {
+    margin-top: 50px;
+}
+.echipa li {
+    list-style-type: none;
+    text-align: center;
+}
+.echipa li a{
+    padding:10px;
+    text-decoration: none;
+    color:black;
+    font-size: 22px;
+    display: inline-block;
+}
+.oferte-cazare {
+    width: 80%;
+    margin:0 auto;
+    height:auto;
+    margin-top: 50px;
+}
+.oferte-cazare .container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.oferta .image {
+    width:100%;
+    position: relative;
+    height: 75%;
+    overflow: hidden;
+}
+.oferta .image h1{
+    position: absolute;
+    top:30%;
+    text-transform: uppercase;
+    margin-left:30%;
+}
+.oferta .image img {
+    width:100%;
+    height: 400px;
+    opacity: 0.7;
+}
+.oferta .image .background {
+    width:60%;
+    height:100px;
+    background: #090011;
+    transform:  translateY(30px) rotate(10deg);
+    margin-left:-100px;
+}
+.oferta .image:hover h1 {
+    transform:  translateY(-50px) scale(0.9);
+    transition: all 0.35s ease-in-out;
+    border-top: #0f171b;
+    border-top-style: solid;
+    border-top-width: medium;
+}
+.oferta .image:hover .background{
+    transform:  translateY(-50px) rotate(30deg);
+    transition: all 0.35s ease-in-out;
+}
+.oferta .image:hover img {
+    opacity: 1;
+}
+.oferta {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+}
+.oferta .description {
+    margin-left:30px;
+    position: relative;
+    height: auto;
+}
+.oferta .description .price{
+    display: flex;
+    align-items: center;
+}
+.oferta .description .price span{
+    margin-left: 10px;
+}
+.oferta .description .reviews{
+    position: absolute;
+    top: 20px; 
+    right:30px;
+}
+.oferta .description .reviews .number{
+    width:50px;
+    height: 50px;
+    background: #090011;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #FFFFFF;
+}
+.oferta .description .offer p{
+    font-weight: 200;
+    font-family: Georgia;
+    font-size: 22px;
+}
+.button_add {
+    width:100px;
+    background: black;
+    padding:20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+    position:absolute;
+    margin-bottom:20px;
+}
+.button_add a {
+    text-decoration: none;
+    color:white;
+}
+@media screen and (max-width: 1000px) {
+    .oferte-cazare .container .oferta{
+        display: grid;
+        grid-template-columns: 1fr;
+}
+    .oferte-cazare .container {
+        gap: 100px;
+    }
+    .oferta .description {
+        margin-left: 0px;
+    }
+    .footer {
+        margin-top:20%;
+    } 
+}
+.informatii-firma {
+    height:auto;
+    width:90%;
+    margin: 0 auto;
+}
+.informatii-firma .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.informatii-firma .container .panel img{
+    width:100%;
+    padding:50px;
+}
+.informatii-firma .container .panel .center {
+    display: flex;
+    align-items: center; 
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+    .informatii-firma .container {
+        grid-template-columns: 1fr;
+    }
+    .informatii-firma .container .panel .center {
+        width:100%;
+    }
+}
+.informatii-firma .container .panel .about-us {
+    font-size: 24px;
+    font-weight: 600;
+    color: #090011;
+}
+.statistici {
+    width:100%;
+    height:300px;
+    bottom: 100px;
+    margin-top:100px;
+    position: relative;
+}
+.statistici .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+}
+.statistici .container .panel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.statistici .container .panel div p {
+    font-size: 40px;
+    font-weight: 100;
+    color: #f60d54;
+}
+.statistici .container .panel div h1 {
+    color:black;
+    font-size: 60px;
+    margin-top: -10px;
+    text-align: center;
+}
+.statistici .container .panel div hr {
+    background: #f60d54;
+    border: none;
+    height: 4px;
+}
+.icon-container ul li {
+    list-style-type: none;
+}
+@media screen and (max-width: 1000px) {
+    .menu-container .menu ul {
+        display:none;
+    }
+    .icon-container ul li .iconita-deschidere {
+        display: block;
+    }
+}
+.icon-container {
+    left: -100px;
+    position: absolute;
+}
+.icon-container .iconita-deschidere {
+    width:40px;
+    display: none;
+}
+.icon-container .iconita-inchidere {
+    display: none;
+}

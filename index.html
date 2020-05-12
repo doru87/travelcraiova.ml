@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- custom stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="super-container">
+  
+        <div class="background-image">
+            <img src="poze/home_slider.jpg" alt="">
+        </div>
+
+        <div class="topbar">
+            <div class="container">
+                
+                <div class="icon-container">
+                    <ul>
+                    <li><a class="iconita-deschidere"><i class="fa fa-bars fa-lg"></i></a></li>
+                    <li><a class="iconita-inchidere"><i class="fas fa-times fa-lg"></i></a></li>
+                    </ul> 
+                </div>
+                  
+                <div class="logo-container">
+                    <div class="logo"><a href="#"><img src="poze/logo-footer.png" alt="">travelcraiova</a></div>
+                </div>
+                <div class="menu-container">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="index.html">Acasa</a></li>
+                            <li><a href="despre.html">Despre noi</a></li>
+                            <li><a href="oferte.html">Oferte</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="search-tabs">
+            <div class="container">
+                <div><i class="fas fa-suitcase-rolling"></i><span>Hoteluri</span></div>
+                <div><i class="fas fa-bus-alt"></i><span>Inchirieri autoturisme</span></div>
+                <div><i class="fas fa-plane-departure"></i><span>Bilete avion</span></div>
+                <div><i class="fas fa-umbrella-beach"></i><span>Excursii</span></div>
+                <div><i class="fas fa-ship"></i><span>Croaziere</span></div>
+            </div>
+        </div>
+
+
+        <div class="search-panel">
+            <div class="container">
+                <form action="#" class="form">
+                    <div class="search-item">
+                        <div class="title-input">Destinatie</div>
+                        <div class="center"><input type="text" class="destination" required="required"></div>
+                        
+                    </div>
+                    <div class="search-item">
+                        <div class="title-input">check in</div>
+                        <div class="center"><input type="text" class="check_in" placeholder="YYYY-MM-DD"></div>
+                    </div>
+                    <div class="search-item">
+                        <div class="title-input">check out</div>
+                        
+                        <div class="center"><input type="text" class="check_out" placeholder="YYYY-MM-DD"></div>
+                    </div>
+                    <div class="search-item">
+                        <div class="title-select">Adulti</div>
+                        <div class="center">        
+                            <select name="adults" class="adults">
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                            </select></div>
+                    </div>
+                    <div class="search-item">
+                        <div class="title-select">Copii</div>
+                        <div class="center">
+                            <select name="children" class="children">
+                                <option>0</option>
+                                <option>02</option>
+                                <option>03</option>
+                            </select>
+                        </div>
+                   
+                    </div>
+                    <div class="search-item">
+                        
+                        <div class="center"><button class="button search-button">Cauta</button></div>
+                    
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="tours">
+            <div class="container">
+                <div class="item">
+                    <div class="image">
+                        <img src="poze/intro_1.jpg" alt="">
+                    </div>
+                    <div class="period">17 mai - 1 iunie</div>
+                    <div class="title">Africa de Sud</div>
+                 
+                    <button>Mai multe informatii...</button>
+                </div>
+                
+                <div class="item">
+                    <div class="image">
+                        <img src="poze/intro_2.jpg" alt="">
+                    </div>
+                    <div class="period">7 iunie - 14 iunie</div>
+                    <div class="title">Bolivia</div>
+                 
+                    <button>Mai multe informatii...</button>
+                </div>
+                
+                <div class="item">
+                    <div class="image">
+                        <img src="poze/intro_3.jpg" alt="">
+                    </div>
+                    <div class="period">20 iulie - 4 august</div>
+                    <div class="title">Nepal</div>
+                 
+                    <button>Mai multe informatii...</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel">
+            <button class="carousel_button button-left">
+                <img src="svg/back.svg" alt="">
+            </button>
+            <div class="carousel_track-container">
+             
+                <ul class="carousel_track">
+                    <li class="carousel_slide current-slide">
+                            <img src="poze/Steigenberger Golf Resort.jpg" alt="">
+                            <div class="description">
+                                <h1>Steigenberger Golf Resort</h1>
+                                <p>Situat pe terenul de golf US PGA pentru campionate, acest complex de 5 stele oferă camere spațioase, cu balcon. De asemenea, există un spa cu servicii complete și o piscină în aer liber, cu o terasă cu șezlonguri. Steigenberger se află pe plaja Lagoon El Gouna, iar oaspeții au acces la plaja privată de la malul Mării Roșii.</p>    
+                            </div>
+                           
+                    </li>
+                    <li class="carousel_slide">
+                            <img src="poze/Grand Palladium Palace Ibiza Resort.jpg" alt="">
+                            <div class="description">
+                                <h1>Grand Palladium Palace Ibiza Resort</h1>
+                                <p>Acest complex all inclusive, situat pe la malul mării, în Playa d'en Bossa din Ibiza oferă camere cu aer condiționat, dintre care unele cu vedere la mare. Complexul pune la dispoziție un centru spa, 4 piscine cu apă dulce, 7 terenuri de tenis și o sală de gimnastică.</p>
+                            </div>
+                    </li>
+                    <li class="carousel_slide">
+                            <img src="poze/Centara Ceysands Resort & Spa.jpg" alt="">
+                            <div class="description">
+                                <h1>Centara Ceysands Resort & Spa</h1>
+                                <p>Acest complex modern este situat la doar câțiva pași de râul Bentota și la 60 km de orașul Colombo. Aeroportul Internațional Bandaranaike se află la 100 km, iar serviciile de transfer de la/la aeroport sunt disponibile la un cost suplimentar.</p>
+                            </div>  
+                    </li>
+                </ul>
+           
+            </div>
+            <button class="carousel_button button-right">
+                <img src="svg/forward.svg" alt="">
+            </button>
+        
+        </div>
+
+    <div class="offers">
+        <div class="container">
+            <div class="item">
+                <div class="image">
+                    <div class="image-details">
+                        <img src="poze/offer_1.jpg" alt="">
+                        <h3>Sandton Executive Suites</h3>
+                    </div>
+                </div>
+           
+                <div class="details">
+                    <div class="price">
+                        <h1>$70</h1><span>per noapte</span>
+                    </div>
+                    <div class="offer">
+                        <p>Situat în Sandton, la 1,4 km de piața Nelson Mandela, Sandton Executive Suites oferă cazare în stil apartament. Oferă o piscină în aer liber și o grădină cu facilități de grătar.</p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <div class="image-details">
+                        <img src="poze/offer_2.jpg" alt="">
+                        <h3>The Capital on the Park</h3>
+                    </div>
+                </div>
+                   
+                <div class="details">
+                    <div class="price">
+                        <h1>$75</h1><span>per noapte</span>
+                    </div>
+                    <div class="offer">
+                        <p>Situată în Johannesburg, la 2,3 km de centrul comercial Sandton City, Capital on the Park oferă cazare cu restaurant, parcare privată gratuită, piscină în aer liber și centru de fitness.</p>
+                    </div>
+                </div>  
+            </div>
+
+              <div class="item">
+                <div class="image">
+                    <div class="image-details">
+                        <img src="poze/offer_3.jpg" alt="">
+                        <h3>WeStay Westpoint Apartments</h3>
+                    </div>
+                </div>
+           
+                <div class="details">
+                    <div class="price">
+                        <h1>$60</h1><span>per noapte</span>
+                    </div>
+                    <div class="offer">
+                        <p>WeStay Apartments-Westpoint este situat în inima centrului de afaceri și financiar din Johannesburg, la o scurtă distață de SandtonCity. Oferă cazare excelentă în regim self-catering.</p>
+                    </div>
+                </div>  
+            </div>
+
+          <div class="item">
+                <div class="image">
+                    <div class="image-details">
+                        <img src="poze/offer_4.jpg" alt="">
+                        <h3>The Regency Apartment Hotel Menlyn</h3>
+                    </div>
+                </div>
+           
+                <div class="details">
+                    <div class="price">
+                        <h1>$80</h1><span>per noapte</span>
+                    </div>
+                    <div class="offer">
+                        <p>Regency Apartment Hotel Menlyn este situat în Pretoria și oferă o terasă la soare cu piscină, precum și un bar. Cu WiFi gratuit, acest hotel de 4 stele oferă o recepție de 24 de ore și se află la 4 minute cu mașina de centrul comercial Menlyn Park.</p>
+                    </div>
+                </div>  
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="customer-reviews">
+        <h1 class="title">Ce parere au clientii nostri...</h1>
+        <div class="container">
+            <div class="review">
+                <div class="review-panel">
+                    <div class="poza">
+                        <img src="poze/customer1.jpg" alt="">
+                        <h3>Simionescu Mihaela</h3>
+                    </div>
+                    <div class="arrow">
+                        <i class="fas fa-angle-double-down"></i>
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="comment">
+                    <p>Anul acesta am apelat la agentia TravelCraiova pentru o prima vacanta in Turcia. Am avut emotiile necunoscutului, insa acestea au fost spulberate odata ce am ajuns la hotel. Totul a fost la superlativ - de la conditiile de cazare, la servicii, mancare, activitati, plaja, etc.Cu siguranta vom mai reveni.</p>
+                  </div>
+            </div>
+     
+            <div class="review">
+                <div class="review-panel">
+                    <div class="poza">
+                        <img src="poze/customer2.jpg" alt="">
+                        <h3>Mihalcea Cosmin</h3>
+                    </div>
+                    <div class="arrow">
+                        <i class="fas fa-angle-double-down"></i>
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="comment">
+                    <p>Am avut parte de o vacanta minunata, in care ne-am relaxat cu adevarat. Totul a fost pe gustul nostru: personal foarte amabil si prietenos, locatie de vis, mancare foarte buna si diversificata, iar lista poate continua.Cu siguranta vom colabora si pentru urmatoarele vacante. Recomand cu drag TravelCraiova!</p>
+                  </div>
+            </div>
+            
+            <div class="review">
+                <div class="review-panel">
+                    <div class="poza">
+                        <img src="poze/customer3.jpg" alt="">
+                        <h3>Tudor Andrei</h3>
+                    </div>
+                    <div class="arrow">
+                        <i class="fas fa-angle-double-down"></i>
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="comment">
+                    <p>Vacanta in Palma de Mallorca a fost o experienta minunata.Cazarea in hotelul Jaime III a fost o alegere foarte buna. Hotelul este bine pozitionat, iar personalul primitor. Camera a fost frumoasa si mancarea foarte buna. Atat insula cat si orasul au multe locuri frumoase care merita vizitate. Cu alte cuvinte a fost o vacanta reusita pe care dorim sa o mai repetam in viitor. </p>
+                  </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <div class="center-panel">
+                    <div class="logo"><img src="poze/logo-footer.png" alt=""></div>
+                    <div class="phone"><i class="fas fa-phone-square"></i>0735829***</div>
+                    <div class="email"><i class="fas fa-at"></i>travel@craiova.com</div>
+                </div>
+            </div>
+            <div class="footer-center">
+                <div class="center-panel">
+                    <h2>Echipa noastra</h2>
+                    <ul class="echipa">
+                        <li><a href="">Despre noi</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Cariere</a></li>
+                      </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="center-panel">
+                    <h2>Legal</h2>
+                    <ul class="echipa">
+                      <li><a href="">Termeni si Conditii</a></li>
+                      <li><a href="">Politica de Confidentialitate</a></li>
+                      <li><a href="">Securitatea datelor</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+  
+<script src ="index.js" type="module"></script>
+<script src ="app.js" type="module"></script>
+
+</body>
+</html>
