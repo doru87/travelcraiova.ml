@@ -38,10 +38,11 @@ const reviews = Array.from(customerReviews.children);
         arrow.addEventListener('click', e => {
             if(arrow.querySelector("i").classList.contains("fa-angle-double-down")){
                 arrow.parentElement.parentElement.querySelector('.comment').style.display="block";
+                arrow.parentElement.parentElement.querySelector('.comment').style.height="auto";
 
                 var screen = window.matchMedia("screen and (max-width: 1000px)");
                 if (screen.matches){
-                    arrow.parentElement.parentElement.style.marginBottom="200px";
+                    arrow.parentElement.parentElement.style.marginBottom="250px";
                 }
             
                 arrow.querySelector("i").classList.remove("fa-angle-double-down");
